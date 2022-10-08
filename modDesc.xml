@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="69">
+    <title>
+        <en>Field Inspector</en>
+    </title>
+
+    <description>
+        <en>
+            <![CDATA[Field Inspector shows a HUD overlay with field statistics
+
+Display Options:
+- 4 on screen placement locations - each corner of the display
+- Just your fields or all fields
+- Crop type of field
+- Growth state of crop
+
+Default Input Bindings:
+Left Ctrl + Left Alt + Num Pad 5 : Reload configuration file from disk
+Left Alt + Num Pad 5 : Toggle HUD Visibility
+
+Changelog:
+ v1.0.1.2:
+  - Added player on field, added field by color settings
+ v1.0.1.1:
+  - Bugfixes
+ v1.0.1.0:
+  - Updated script to match newest version of SimpleInspector (new settings type and display changes)
+ v1.0.0.0:
+  - Initial commit
+  - Converted lua script keywords from Simple Inspector
+]]>
+        </en>
+    </description>
+    <author>MasterxOfxNone</author>
+    <version>1.0.1.2</version>
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true" />
+    <extraSourceFiles>
+        <sourceFile filename="loader.lua" />
+        <sourceFile filename="utils\EasyDevUtils.lua" />
+    </extraSourceFiles>
+    <l10n filenamePrefix="translations/translation" />
+
+    <actions>
+        <action name="FieldInspector_reload_config" category="SYSTEM" axisType="HALF" ignoreComboMask="false" />
+        <action name="FieldInspector_toggle_visible" category="SYSTEM" axisType="HALF" ignoreComboMask="false" />
+        <action name="FieldInspector_toggle_allfarms" category="SYSTEM" axisType="HALF" ignoreComboMask="false" />
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="FieldInspector_reload_config">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_lalt KEY_KP_5" axisComponent="+" neutralInput="0" index="1" />
+        </actionBinding>
+
+        <actionBinding action="FieldInspector_toggle_visible">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_KP_5" axisComponent="+" neutralInput="0" index="1" />
+        </actionBinding>
+    </inputBinding>
+</modDesc>

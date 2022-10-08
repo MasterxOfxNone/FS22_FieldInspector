@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+      <translationContributors>JTSage</translationContributors>
+
+      <texts>
+
+            <!-- isEnabledVisible = true,
+        isEnabledAlphaSort = true,
+        isEnabledShowPlayer = false,
+        isEnabledShowAll = false,
+        isEnabledShowUnowned = false,
+        isEnabledShowFieldFruit = true,
+        isEnabledShowFieldFruitGrowth = true,
+        isEnabledPadFieldNum = true, -->
+
+            <text name="title_fieldInspector" text="Field Inspector" />
+            <text name="input_FieldInspector_reload_config" text="Reload configuration" />
+            <text name="input_FieldInspector_toggle_visible" text="Toggle Display On/Off" />
+            <text name="input_FieldInspector_toggle_allfarms" text="Toggle Show All Farms On/Off" />
+            <text name="setting_fieldInspector_Visible" text="HUD Visible" />
+            <text name="toolTip_fieldInspector_Visible" text="When enabled, the overlay is visible" />
+            <text name="setting_fieldInspector_TextSize" text="Font Size" />
+            <text name="toolTip_fieldInspector_TextSize" text="Font Size for display, in relative pixels." />
+            <text name="setting_fieldInspector_AlphaSort" text="Sort List Alphabetically" />
+            <text name="toolTip_fieldInspector_AlphaSort" text="When enabled, sort list alphebetically, otherwise, use the tab order." />
+            <text name="setting_fieldInspector_ShowAll" text="Show All Fields" />
+            <text name="toolTip_fieldInspector_ShowAll" text="When enabled, show all fields; otherwise, only show the fields not in exclude_fields list." />
+            <text name="setting_fieldInspector_ShowUnowned" text="Show All Farms" />
+            <text name="toolTip_fieldInspector_ShowUnowned" text="When enabled, show fields from farms you are not a part of." />
+            <text name="setting_fieldInspector_ShowPlayer" text="Show Player Names" />
+            <text name="toolTip_fieldInspector_ShowPlayer" text="When enabled, show the name of the player controlling a vehicle. Active in multiplayer games only." />
+            <text name="setting_fieldInspector_ShowFieldFruit" text="Show Field Crop" />
+            <text name="toolTip_fieldInspector_ShowFieldFruit" text="When enabled, show the field crop's name." />
+            <text name="setting_fieldInspector_ShowFieldFruitColor" text="Use Field Crop Color" />
+            <text name="toolTip_fieldInspector_ShowFieldFruitColor" text="When enabled, the field crop's color will used for its text color." />
+            <text name="setting_fieldInspector_ShowFieldFruitGrowth" text="Show Field Crop Growth" />
+            <text name="toolTip_fieldInspector_ShowFieldFruitGrowth" text="When enabled, show the field crop's growth state." />
+            <text name="setting_fieldInspector_ShowFieldFruitGrowthColor" text="Use Field Crop Growth Color" />
+            <text name="toolTip_fieldInspector_ShowFieldFruitGrowthColor" text="When enabled, the field crop's growth state text will be colored accordingly." />
+            <text name="setting_fieldInspector_PadFieldNum" text="Pad Field Numbers" />
+            <text name="toolTip_fieldInspector_PadFieldNum" text="When enabled, show the field number as at least 2 digits (1 -> 01)" />
+            <text name="setting_fieldInspector_TextBold" text="Use Bold Font" />
+            <text name="toolTip_fieldInspector_TextBold" text="When enabled, use bold text throughout the display" />
+            <text name="setting_fieldInspector_DisplayMode" text="Display Mode" />
+            <text name="toolTip_fieldInspector_DisplayMode" text="Position of the overlay display" />
+            <text name="setting_fieldInspector_DisplayMode1" text="Top Left, Under Help" />
+            <text name="setting_fieldInspector_DisplayMode2" text="Top Right, Under Clock" />
+            <text name="setting_fieldInspector_DisplayMode3" text="Bottom Left, Above Map" />
+            <text name="setting_fieldInspector_DisplayMode4" text="Bottom Right, Above Speedometer" />
+
+            <text name="text_fieldInspector_all" text="All" />
+            <text name="text_fieldInspector_unknown" text="Unknown" />
+            <text name="text_fieldInspector_mask" text="Mask" />
+            <text name="text_fieldInspector_picked" text="Picked" />
+            <text name="text_fieldInspector_small" text="Small" />
+            <text name="text_fieldInspector_medium" text="Medium" />
+            <text name="text_fieldInspector_large" text="Large" />
+            <text name="text_fieldInspector_partial" text="Partial" />
+            <text name="text_fieldInspector_growing" text="growing" />
+            <text name="text_fieldInspector_withered" text="withered" />
+            <text name="text_fieldInspector_state" text="State %s" />
+      </texts>
+</l10n>
