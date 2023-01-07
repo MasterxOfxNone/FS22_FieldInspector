@@ -196,7 +196,7 @@ function FieldInspector:getGrowthAndFruitData()
                     if maxGrowingState > 1 and growingState > 0 then
                         if maxGrowingState > 2 then
                             table.insert(texts,
-                                string.format("%s (%d/%d)", growingText, growingState + 1, maxGrowingState))
+                                string.format("%s (%d/%d)", growingText, growingState, maxGrowingState - 1))
                         else
                             table.insert(texts, growingText)
                         end
@@ -229,6 +229,9 @@ function FieldInspector:getGrowthAndFruitData()
 end
 
 function FieldInspector:getGrowthAndFruitTexts(field, index)
+    local plowedText = g_i18n:getText("ui_growthMapPlowed")
+    local cultivatedText = g_i18n:getText("ui_growthMapCultivated")
+
     local fruitTypeText, growthStateText
     local fruitType = g_fruitTypeManager:getFruitTypeByIndex(index)
     if fruitType ~= nil then
@@ -260,6 +263,10 @@ function FieldInspector:getGrowthAndFruitTexts(field, index)
 
         local growthStateTextTable = self.growthStateTexts[tIndex]
         growthStateText = growthStateTextTable[maxGrowthState]
+        if growthStateText == nil then
+            growthStateText = cultivatedText;
+        end
+        
         fruitTypeText = self.fruitTypeTexts[tIndex]
     else
         growthStateText = "No Growth"
@@ -821,6 +828,9 @@ function FieldInspector:onStartMission(mission)
         return
     end
 
+    -- Check required mods
+    self:checkOtherMods();
+
     -- Just call both, load fails gracefully if it doesn't exists.
     self.settings:loadSettings()
     self.settings:saveSettings()
@@ -828,6 +838,10 @@ function FieldInspector:onStartMission(mission)
     self.logger:print(":onStartMission()", FS22Log.LOG_LEVEL.VERBOSE, "method_track")
 
     self:createTextBox()
+end
+
+function FieldInspector:checkOtherMods()
+    
 end
 
 function FieldInspector:findOrigin()
